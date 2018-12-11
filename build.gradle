@@ -26,6 +26,7 @@ buildscript {
             'gson'                 : '2.8.5',
             'retrofitGsonConverter': '2.5.0',
             'rxJavaAdapter'        : '2.5.0',
+            'commons_lang'         : '3.8.1',
 
             // Testing
             'junit'                : '4.12',
