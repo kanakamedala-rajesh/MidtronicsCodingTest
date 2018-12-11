@@ -24,7 +24,23 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$versions.appcompat"
     implementation "com.google.android.material:material:$versions.androidMaterial"
     implementation "androidx.constraintlayout:constraintlayout:$versions.constraintLayout"
-    implementation "androidx.lifecycle:lifecycle-extensions:$versions.lifecycleExtensions"
+
+    implementation "com.google.dagger:dagger:$versions.dagger"
+    implementation "com.google.dagger:dagger-android-support:$versions.dagger"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$versions.dagger"
+    annotationProcessor "com.google.dagger:dagger-compiler:$versions.dagger"
+
+    implementation "io.reactivex:rxjava:$versions.rxJava"
+    implementation "io.reactivex:rxandroid:$versions.rxAndroid"
+
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
+
+    implementation "com.squareup.okhttp3:okhttp:$versions.okhttp"
+    implementation "com.squareup.okio:okio:$versions.okio"
+    implementation "com.squareup.okhttp3:logging-interceptor:$versions.logging_interceptor"
+    implementation "com.google.code.gson:gson:$versions.gson"
+    implementation "com.squareup.retrofit2:converter-gson:$versions.retrofitGsonConverter"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$versions.rxJavaAdapter"
 
     testImplementation "junit:junit:$versions.junit"
 
