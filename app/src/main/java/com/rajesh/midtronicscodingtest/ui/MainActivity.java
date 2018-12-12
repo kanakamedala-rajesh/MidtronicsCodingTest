@@ -15,7 +15,6 @@ import com.rajesh.midtronicscodingtest.constants.CommonUtil.FragmentTypes;
 public class MainActivity extends AppCompatActivity {
 
   private final String TAG = this.getClass().getSimpleName();
-  private BottomNavigationView bottomNavigationView;
   private Fragment activeFragment;
 
 
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
   private void initializeViews() {
     Log.d(TAG, "initializing the views");
-    bottomNavigationView = findViewById(R.id.bottom_navigation);
+    BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
     bottomNavigationView.setOnNavigationItemSelectedListener(new OnNavigationItemSelectedListener() {
       @Override
