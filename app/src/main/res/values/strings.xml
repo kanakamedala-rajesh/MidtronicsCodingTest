@@ -8,6 +8,29 @@
   <!-- TODO: Remove or change this placeholder text -->
   <string name="hello_blank_fragment">Hello blank fragment</string>
 
+  <string name="profile_summary">I intend to establish myself as a Mobile application developer through a long time commitment, contributing to the company growth and in turn ensuring personal growth within the organization. I believe that my technical, functional, communication and also skills from experience of over 4 years in Android development would help me in facing the challenging career ahead.</string>
+  <string-array name="Skills">
+    <item>Java</item>
+    <item>Android</item>
+    <item>C++</item>
+    <item>Android NDK</item>
+    <item>Protobuf</item>
+    <item>JUnit Testing</item>
+    <item>Mockito</item>
+  </string-array>
+
+  <string-array name="Education">
+    <item>University at Albany, SUNY</item>
+    <item>Jawaharlal Nehru Technological University</item>
+  </string-array>
+
+  <string-array name="Experience">
+    <item>CNH Industrials</item>
+    <item>Eagle Creek Software Services</item>
+    <item>VoxVilla</item>
+    <item>Echidna</item>
+    <item>DreamStep Innovations</item>
+  </string-array>
 
   <string-array name="countries">
     <item>Afghanistan</item>

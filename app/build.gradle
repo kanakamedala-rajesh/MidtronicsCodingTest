@@ -24,7 +24,7 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$versions.appcompat"
     implementation "com.google.android.material:material:$versions.androidMaterial"
     implementation "androidx.constraintlayout:constraintlayout:$versions.constraintLayout"
-
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$versions.coordinator_layout"
     implementation "com.google.dagger:dagger:$versions.dagger"
     implementation "com.google.dagger:dagger-android-support:$versions.dagger"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
