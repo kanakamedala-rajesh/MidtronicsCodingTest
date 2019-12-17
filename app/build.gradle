@@ -53,17 +53,6 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espresso"
 }
 
-
-def githubProperties = new Properties()
-/**
- * Create github.properties in root project folder file with
- * gpr.usr=GITHUB_USER_ID & gpr.key=PERSONAL_ACCESS_TOKEN
- * Set env variable GPR_USER & GPR_API_KEY if not adding a properties file
- *
- * **/
-githubProperties.setProperty("gpr.usr", System.getenv("GPR_USER"))
-githubProperties.setProperty("gpr.key", System.getenv("GPR_API_KEY"))
-
 def getVersionName = { ->
     return names.versionName
 }
@@ -87,6 +76,15 @@ publishing {
     }
 
     repositories {
+
+        def githubProperties = new Properties()
+        /**
+         * Create github.properties in root project folder file with
+         * gpr.usr=GITHUB_USER_ID & gpr.key=PERSONAL_ACCESS_TOKEN
+         * Set env variable GPR_USER & GPR_API_KEY if not adding a properties file
+         **/
+        githubProperties.setProperty("gpr.usr", System.getenv("GPR_USER")?:"")
+        githubProperties.setProperty("gpr.key", System.getenv("GPR_API_KEY")?:"")
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/kanakamedala-rajesh/MidtronicsCodingTest")
